@@ -18,8 +18,8 @@
       class="header-icon"
     />
     <div>
-      <a class="header-button"><span class="header-span">Home</span></a>
-      <a class="header-button"><span class="header-span">Consultar</span></a>
+      <a href="../Home" class="header-button"><span class="header-span">Home</span></a>
+      <a href="../CreateProduct" class="header-button"><span class="header-span">Consultar</span></a>
       <a href="../CreateProduct" class="header-button"><span class="header-span">Cadastrar</span></a>
     </div>
   </div>
@@ -36,29 +36,51 @@
         <div class="container-label">
           <span>Tipo</span>
         </div>
-        <input type="text" name="type" />  
+        <input type="text" name="type" required/>  
         <div class="container-label">
           <span>Marca</span>
         </div>
-        <input type="text" name="mark" />   
+        <input type="text" name="mark" required/>   
         <div class="container-label">
           <span>Descrição</span>
         </div>
-        <input type="text" name="desc" />   
+        <input type="text" name="desc" required/>   
         <div class="container-label">
           <span>Valor</span>
         </div>
-        <input type="number" name="value" step="0.01"/>  
+        <input type="number" name="value" required/>  
         <div class="container-label">
           <span>Foto</span>
         </div>
         <div class="container-input-file">
           <input type="file" name="image" />
         </div>
-        <a onclick="document.getElementById('form').submit()" class="button">Salvar</a>
+        <button type="submit" class="button">Salvar</button>
       </form>
     </div>
+  <?php
+        if (isset ($_GET['retorno'])) {
+            $msg = $_GET['retorno'];
+            if($msg == 'Imagem não enviada!') {
+              echo "<br />";
+              echo "<div class='message-container'>";
+              echo "<font color='red'>";
+              echo $msg;
+              $msg="";
+              echo "</font>";
+              echo "</div>";
+            } else {
+            echo "<br />";
+            echo "<div class='message-container'>";
+            echo "<font color='rgb(105, 68, 18)'>";
+            echo $msg;
+              $msg="";
+            echo "</font>";
+            echo "</div>";
+        }}
+      ?>
   </div>
+
 </body>
 
 </html>
