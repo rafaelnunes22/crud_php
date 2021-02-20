@@ -19,7 +19,7 @@
     />
     <div>
       <a href="../Home" class="header-button"><span class="header-span">Home</span></a>
-      <a href="../CreateProduct" class="header-button"><span class="header-span">Consultar</span></a>
+      <a href="../SearchProducts" class="header-button"><span class="header-span">Consultar</span></a>
       <a href="../CreateProduct" class="header-button"><span class="header-span">Cadastrar</span></a>
     </div>
   </div>

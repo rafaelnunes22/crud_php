@@ -1,0 +1,190 @@
+body {
+  background-color: rgb(170, 148, 120);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.header-container {
+  width: 100%;
+  height: 10%;
+  background-color: rgb(105, 68, 18);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-span {
+  font-size: 25px;
+  color: #fff;
+  margin-right: 10px;
+  font-family: "Arvo", serif;
+  text-shadow: rgb(0, 0, 0) 1px 1px;
+  cursor: pointer;
+}
+
+.header-span:hover {
+  font-size: 27px;
+}
+
+.header-icon {
+  width: 70px;
+  height: 70px;
+  margin-left: 30px;
+  transform: rotate(-29deg);
+}
+
+a {
+  text-decoration: none;
+}
+
+.content-container {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  border: 2px solid black;
+  background-color: rgb(199, 166, 134);
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+span {
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Arvo", serif;
+  margin-top: 1%;
+  cursor: pointer;
+}
+
+label {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 30px;
+}
+
+input {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 200px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.button {
+  background-color: rgb(105, 68, 18);
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Arvo", serif;
+  margin-top: 1%;
+  cursor: pointer;
+  height: 40px;
+  width: 220.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.button:hover {
+  background-color: rgb(155, 104, 37);
+}
+
+.card-body {
+  height: 500px;
+  width: 300px;
+  border: 2px solid black;
+  background-color: rgb(105, 68, 18);
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.card-image {
+  height: 50%;
+  width: 90%;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  margin-top: 10px;
+}
+
+.card-desc {
+  color: #ffffff;
+  font-family: "Arvo", serif;
+  text-shadow: rgb(0, 0, 0) 1px 1px;
+  padding: 0;
+  margin: 0;
+  align-self: flex-start;
+  margin-left: 15px;
+
+}
+
+.card-desc-content {
+
+  color: #ffffff;
+  font-family: "Arvo", serif;
+  text-shadow: rgb(0, 0, 0) 1px 1px;
+  padding: 0;
+  margin: 0;
+  margin-left: 15px;
+}
+
+.card-desc-content-desc {
+  color: #ffffff;
+  font-family: "Arvo", serif;
+  text-shadow: rgb(0, 0, 0) 1px 1px;
+  align-self: flex-start;
+  margin-left: 15px;
+  margin-top: 0;
+}
+
+
+.body-desc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 30px;
+}
+
+.container-cards {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.error-message {
+  color: rgb(153, 33, 33);
+  font-family: "Arvo", serif;
+  text-shadow: rgb(0, 0, 0) 1px 1px;
+  font-size: 50px;
+}
