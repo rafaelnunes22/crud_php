@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
   <link rel="sortcut icon" href="../../assets/images/icon-musica.png" type="image/x-icon" />
-  <title>Início</title>
+  <title>Remover</title>
 </head>
 
 <body>
@@ -18,26 +18,32 @@
       class="header-icon"
     />
     <div>
-      <a class="header-button"><span class="header-span">Home</span></a>
+      <a href="../Home" class="header-button"><span class="header-span">Home</span></a>
       <a href="../CreateProduct" class="header-button"><span class="header-span">Cadastrar</span></a>
-      <a href=../SearchProducts class="header-button"><span class="header-span">Consultar</span></a>
+      <a href="../SearchProducts" class="header-button"><span class="header-span">Consultar</span></a>
       <a href="../RemoveProduct" class="header-button"><span class="header-span">Remover</span></a>
-      
     </div>
   </div>
+
   <div class="content-container">
-    <div class="body-content-span">
-      <span class="content-span">Veja todos os produtos cadastrados clicando no botão abaixo!</span>
-      <a class="product-button">Desejo ver os produtos.</a>
+  
+    <form class="form" name="dados" action="../../php/exec_remover.php" method="POST" enctype="multipart/form-data">
+    <h1 class="title">Digite o código do produto a ser removido!</h1>
+      <input type="text" name="cod" placeholder="Código" /> 
+      <button class="button">Remover</button>
+    </form>
+    <div class="container-cards">
+      <?php
+          if (isset ($_GET['retorno'])) {
+            $msg = $_GET['retorno'];
+            echo "<h1 class='message'>$msg</h1>";
+          }
+        ?>
     </div>
-    <img 
-      src="../../assets/images/instrumentos-background.jpg"
-      class="content-image"
-    />
+
   </div>
-  <div class="footer-container">
-    
-  </div>
+
+
 </body>
 
 </html>

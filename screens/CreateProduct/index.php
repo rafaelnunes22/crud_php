@@ -19,8 +19,9 @@
     />
     <div>
       <a href="../Home" class="header-button"><span class="header-span">Home</span></a>
-      <a href="../SearchProducts" class="header-button"><span class="header-span">Consultar</span></a>
       <a href="../CreateProduct" class="header-button"><span class="header-span">Cadastrar</span></a>
+      <a href="../SearchProducts" class="header-button"><span class="header-span">Consultar</span></a>
+      <a href="../RemoveProduct" class="header-button"><span class="header-span">Remover</span></a>
     </div>
   </div>
 
@@ -48,7 +49,7 @@
         <div class="container-label">
           <span>Valor</span>
         </div>
-        <input type="number" name="value" required/>  
+        <input type="number" name="value" step="0.01" required/>  
         <div class="container-label">
           <span>Foto</span>
         </div>
