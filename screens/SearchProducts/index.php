@@ -23,6 +23,7 @@
       <a href="../SearchProducts" class="header-button"><span class="header-span">Consultar</span></a>
       <a href="../UpdateProduct" class="header-button"><span class="header-span">Atualizar</span></a>
       <a href="../RemoveProduct" class="header-button"><span class="header-span">Remover</span></a>
+      <a href="../../php/relatorio.php" class="header-button"><span class="header-span">Relatório</span></a>
     </div>
   </div>
 
@@ -61,7 +62,7 @@
               $linha[4] = str_replace(".",",",$linha[4]);
               $foto = '../fotos/'.$linha[0].'.jpg';
             echo  "<div class='card-body'>"; 
-            echo  "<img class='card-image' src='../../fotos/$foto' />";   
+            echo  "<img class='card-image' src='../../fotos/$foto' alt='Foto não cadastrada'/>";   
             echo  "<div class='body-desc'>"; 
               echo  "<h2 class='card-desc' >Código: <h4 class='card-desc-content'> $linha[0] </h4></h2>";
             echo  "</div>"; 

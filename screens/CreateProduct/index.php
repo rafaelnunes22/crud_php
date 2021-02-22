@@ -23,6 +23,7 @@
       <a href="../SearchProducts" class="header-button"><span class="header-span">Consultar</span></a>
       <a href="../UpdateProduct" class="header-button"><span class="header-span">Atualizar</span></a>
       <a href="../RemoveProduct" class="header-button"><span class="header-span">Remover</span></a>
+      <a href="../../php/relatorio.php" class="header-button"><span class="header-span">Relatório</span></a>
     </div>
   </div>
 
