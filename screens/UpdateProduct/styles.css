@@ -42,10 +42,6 @@ a {
 .content-container {
   height: 90%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 .form-container {
@@ -65,7 +61,6 @@ form {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  margin-bottom: 10px;
 }
 
 span {
@@ -89,7 +84,41 @@ input {
   border: none;
   padding: 10px;
   margin-bottom: 5px;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container-label {
+  background-color: green;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 220.5px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(105, 68, 18);
   margin-top: 5px;
+}
+
+.container-input-file {
+  background-color: #fff;
+  height: 40px;
+  width: 220.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .button {
@@ -113,81 +142,19 @@ input {
   background-color: rgb(155, 104, 37);
 }
 
-.card-body {
-  height: 500px;
-  width: 300px;
-  border: 2px solid black;
-  background-color: rgb(105, 68, 18);
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.card-image {
-  height: 50%;
-  width: 90%;
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
-  margin-top: 10px;
-}
-
-.card-desc {
-  color: #ffffff;
-  font-family: "Arvo", serif;
-  text-shadow: rgb(0, 0, 0) 1px 1px;
-  padding: 0;
-  margin: 0;
-  align-self: flex-start;
-  margin-left: 15px;
-
-}
-
-.card-desc-content {
-
-  color: #ffffff;
-  font-family: "Arvo", serif;
-  text-shadow: rgb(0, 0, 0) 1px 1px;
-  padding: 0;
-  margin: 0;
-  margin-left: 15px;
-}
-
-.card-desc-content-desc {
-  color: #ffffff;
-  font-family: "Arvo", serif;
-  text-shadow: rgb(0, 0, 0) 1px 1px;
-  align-self: flex-start;
-  margin-left: 15px;
-  margin-top: 0;
-}
-
-
-.body-desc {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
+.message-container {
+  background-color: rgb(199, 166, 134);
+  height: 100px;
   width: 100%;
-  height: 30px;
-}
-
-.container-cards {
   display: flex;
-  flex-direction: row;
-  height: 100%;
-  width: 100%;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.error-message {
-  color: rgb(153, 33, 33);
+font {
+  font-size: 70px;
   font-family: "Arvo", serif;
   text-shadow: rgb(0, 0, 0) 1px 1px;
-  font-size: 50px;
 }
 
 .title {

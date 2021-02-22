@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
   <link rel="sortcut icon" href="../../assets/images/icon-musica.png" type="image/x-icon" />
-  <title>Buscar</title>
+  <title>Consultar</title>
 </head>
 
 <body>
@@ -18,17 +18,19 @@
       class="header-icon"
     />
     <div>
-      <a href="../Home" class="header-button"><span class="header-span">Home</span></a>
+      <a href="../Home" class="header-button"><span class="header-span">Início</span></a>
       <a href="../CreateProduct" class="header-button"><span class="header-span">Cadastrar</span></a>
       <a href="../SearchProducts" class="header-button"><span class="header-span">Consultar</span></a>
+      <a href="../UpdateProduct" class="header-button"><span class="header-span">Atualizar</span></a>
       <a href="../RemoveProduct" class="header-button"><span class="header-span">Remover</span></a>
     </div>
   </div>
 
   <div class="content-container">
     <form class="form" name="dados" action="index.php" method="POST" enctype="multipart/form-data">
-      <input type="text" name="cod" placeholder="Código" /> 
-      <input type="text" name="mark" placeholder="Marca" /> 
+      <h1 class="title">Buscar instrumento(s)!</h1>
+      <input type="text" name="cod" placeholder="Filtrar por código" /> 
+      <input type="text" name="mark" placeholder="Filtrar por marca" /> 
       <button class="button">Buscar</button>
     </form>
     <div class="container-cards">

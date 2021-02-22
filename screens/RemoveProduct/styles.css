@@ -94,6 +94,7 @@ input {
 
 .button {
   background-color: rgb(105, 68, 18);
+  text-shadow: rgb(0, 0, 0) 1px 1px;
   border-radius: 5px;
   color: #ffffff;
   font-family: "Arvo", serif;

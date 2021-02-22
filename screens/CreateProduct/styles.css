@@ -135,6 +135,7 @@ input::-webkit-inner-spin-button {
   align-items: center;
   margin-bottom: 10px;
   border: none;
+  text-shadow: rgb(0, 0, 0) 1px 1px;
 }
 
 .button:hover {
@@ -154,4 +155,10 @@ font {
   font-size: 70px;
   font-family: "Arvo", serif;
   text-shadow: rgb(0, 0, 0) 1px 1px;
+}
+
+.title {
+  font-family: "Arvo", serif;
+  text-shadow: rgb(0, 0, 0) 1px 1px;
+  font-size: 20px;
 }

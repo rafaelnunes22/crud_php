@@ -78,6 +78,8 @@ body {
   font-family: "Arvo", serif;
   margin-top: 1%;
   cursor: pointer;
+  font-family: "Arvo", serif;
+  text-shadow: rgb(0, 0, 0) 1px 1px;
 }
 
 .product-button:hover {

@@ -18,17 +18,19 @@
       class="header-icon"
     />
     <div>
-      <a class="header-button"><span class="header-span">Home</span></a>
+      <a class="header-button"><span class="header-span">Início</span></a>
       <a href="../CreateProduct" class="header-button"><span class="header-span">Cadastrar</span></a>
       <a href=../SearchProducts class="header-button"><span class="header-span">Consultar</span></a>
+      <a href="../UpdateProduct" class="header-button"><span class="header-span">Atualizar</span></a>
       <a href="../RemoveProduct" class="header-button"><span class="header-span">Remover</span></a>
+      
       
     </div>
   </div>
   <div class="content-container">
     <div class="body-content-span">
-      <span class="content-span">Veja todos os produtos cadastrados clicando no botão abaixo!</span>
-      <a class="product-button">Desejo ver os produtos.</a>
+      <span class="content-span">Veja todos os instrumentos cadastrados clicando no botão abaixo!</span>
+      <a href="../SearchProducts" class="product-button">Desejo ver os instrumentos</a>
     </div>
     <img 
       src="../../assets/images/instrumentos-background.jpg"

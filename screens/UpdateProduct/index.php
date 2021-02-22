@@ -31,34 +31,38 @@
       <form 
         name="dados" 
         id="form"
-        action="../../php/exec_cadastrar.php" 
+        action="../../php/exec_atualizar.php" 
         method="POST" 
         enctype="multipart/form-data"
       >
-        <h1 class="title">Cadastrar instrumento(s)!</h1>
+        <h1 class="title">Atualizar instrumento a partir do código!</h1>
+        <div class="container-label">
+          <span>Código</span>
+        </div>
+        <input type="text" name="cod" placeholder="Digite o código..." required/>
         <div class="container-label">
           <span>Tipo</span>
         </div>
-        <input type="text" name="type" placeholder="Digite o tipo..." required/>  
+        <input type="text" name="type" placeholder="Digite o tipo..." />  
         <div class="container-label">
           <span>Marca</span>
         </div>
-        <input type="text" name="mark" placeholder="Digite a marca..." required/>   
+        <input type="text" name="mark" placeholder="Digite a marca..." />   
         <div class="container-label">
           <span>Descrição</span>
         </div>
-        <input type="text" name="desc" placeholder="Digite a descrição... " required/>   
+        <input type="text" name="desc" placeholder="Digite a descrição..." />   
         <div class="container-label">
           <span>Valor</span>
         </div>
-        <input type="number" name="value" placeholder="Digite o valor..." step="0.01" required/>  
+        <input type="number" name="value" step="0.01" placeholder="Digite o valor..." />  
         <div class="container-label">
           <span>Foto</span>
         </div>
         <div class="container-input-file">
           <input type="file" name="image" />
         </div>
-        <button type="submit" class="button">Salvar</button>
+        <button type="submit" class="button">Atualizar</button>
       </form>
     </div>
   <?php

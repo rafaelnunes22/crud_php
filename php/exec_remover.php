@@ -14,7 +14,7 @@ mysqli_query($conexao,$sql) or die(mysqli_connect_error());
 $remove_foto='../fotos/'.$cod.'.jpg';
 unlink($remove_foto);
 
-$msg=urlencode('Produto removido com sucesso!');
+$msg=urlencode('Instrumento removido com sucesso!');
 header ("location: ../screens/RemoveProduct?retorno=$msg");
 
 ?>   
